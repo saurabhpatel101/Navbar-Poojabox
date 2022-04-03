@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Navbar</title>
+  </head>
+  <body>
+    <section id="banner">
+      <div class="banner">
+        <p>USE CODE AWESOME20 FOR 20% OFF</p>
+      </div>
+    </section>
+    <section id="brand">
+      <div class="d-flex justify-content-between remove">
+        <div class="branding-items">
+          <div class="only-lg">
+            <span>Hi There!</span>
+            <br />
+            <span><a href="#">LOGIN</a> OR <a href="#">REGISTER</a></span>
+          </div>
+          <div class="only-sm bar-menu">
+            <span
+              ><i
+                class="fa fa-bars"
+                aria-hidden="true"
+                onclick="showSidebar()"
+              ></i
+            ></span>
+            <div class="side-menu-wrapper" id="side-menu-wrapper-id">
+              <p style="text-align: right">
+                <i
+                  style="margin: 20px; font-size: 20px"
+                  class="fa fa-window-close"
+                  aria-hidden="true"
+                  onclick="closeSidebar()"
+                ></i>
+              </p>
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      SHOP
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body">
+                      <div>
+                        <ul>
+                          <li>HEALING CRYSTAL</li>
+                          <li>CRYSTAL BRACELETS</li>
+                          <li>POOJA ROOM DECOR</li>
+                          <li>HOME DECOR</li>
+                          <li>CRYSTAL INTENTION CANDLES</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>CRYSTAL TREES</li>
+                          <li>EVIL EYE JEWELLERY</li>
+                          <li>CRYSTAL RINGS</li>
+                          <li>CRYSTAL SHOWPIECES</li>
+                          <li>DIYAS&T-LIGHTS</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>KRISHNA IDOLS</li>
+                          <li>HOLI</li>
+                          <li>JAP MALAS</li>
+                          <li>FENGS SHUI</li>
+                          <li>URILS</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      HOME DECOR
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <div>
+                        <ul>
+                          <li>HOME DECOR</li>
+                          <li>LIMITED EDITION</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>LAMPSLANTERNSLIGHTING</li>
+                          <li>DIYAS&T_LIGHTS</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>POOJA ESSENTIALS</li>
+                          <li>URILS</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding-items">
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/2090/3151/t/193/assets/logo-optimized.svg?v=5427892325386485898"
+            />
+          </div>
+        </div>
+        <div class="branding-items">
+          <div>
+            <span><i class="fa fa-search" aria-hidden="true"></i> </span>
+            <span class="only-lg">SEARCH </span>
+            <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+            <span class="only-lg">CART </span>
+            <span id="circle" class="only-lg">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="navigation" class="only-lg">
+      <div class="d-flex justify-content-center dropdown-wrapper">
+        <div class="nav-list dropdown-wrapper-trigger">
+          <span>SHOP</span><span style="font-size: 25px; padding: 5px">▾</span>
+          <div class="dropdown-content">
+            <div class="d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li>HEALING CRYSTAL</li>
+                  <li>CRYSTAL BRACELETS</li>
+                  <li>POOJA ROOM DECOR</li>
+                  <li>HOME DECOR</li>
+                  <li>CRYSTAL INTENTION CANDLES</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>CRYSTAL TREES</li>
+                  <li>EVIL EYE JEWELLERY</li>
+                  <li>CRYSTAL RINGS</li>
+                  <li>CRYSTAL SHOWPIECES</li>
+                  <li>DIYAS&T-LIGHTS</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>KRISHNA IDOLS</li>
+                  <li>HOLI</li>
+                  <li>JAP MALAS</li>
+                  <li>FENGS SHUI</li>
+                  <li>URILS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list dropdown-wrapper-trigger">
+          <span>HOME DECOR</span
+          ><span style="font-size: 25px; padding: 5px">▾</span>
+          <div class="dropdown-content">
+            <div class="d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li>HOME DECOR</li>
+                  <li>LIMITED EDITION</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>LAMPSLANTERNSLIGHTING</li>
+                  <li>DIYAS&T_LIGHTS</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>POOJA ESSENTIALS</li>
+                  <li>URILS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">FESTIVE DECOR</div>
+        <div class="nav-list">CORPORATE GIFTING</div>
+      </div>
+    </section>
+    <section id="home">
+      <div class="home_vid_vid-wrapper">
+        <div class="top-right">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </div>
+        <video
+          class="max_img_opt_vid artisanvideo lazy"
+          id="myvideo"
+          width="100%"
+          height="100%"
+          playsinline="playsinline"
+          disablepictureinpicture="true"
+          controlslist="nodownload"
+          preload="none"
+          aria-label="Bear Hybrid"
+          data-uw-node-idx="621"
+          poster="https://cdn.shopify.com/s/files/1/2090/3151/files/Salt_lamp.00_00_00_00.Still003.jpg?v=1639060837"
+          loop=""
+          muted=""
+          autoplay=""
+        >
+          <source
+            src="https://cdn.shopify.com/s/files/1/2090/3151/files/READ_YOUR_HOROSCOPE_FOR_THE_DAY.mp4?v=1648715174"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section id="carousal">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide container"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-between">
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/home-decor_fe85768e-1c58-46ab-986b-87eba7b8bdbb_100x100.png?v=1637219857"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/home-decor_fe85768e-1c58-46ab-986b-87eba7b8bdbb_100x100.png?v=1637219857"
+                  alt="Home Decor"
+                />
+                <p>HOME DECOR</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/DSC_6026_1_62b8ef22-39be-4ce2-b14b-ec4e3939fc8a_100x100.jpg?v=1643796829"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/DSC_6026_1_62b8ef22-39be-4ce2-b14b-ec4e3939fc8a_100x100.jpg?v=1643796829"
+                  alt="Aura Cleansing"
+                />
+                <p>AURA CLEANSING</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/urlis_695e992d-0182-4b65-98d6-c83d00ca01bf_100x100.png?v=1637219945"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/urlis_695e992d-0182-4b65-98d6-c83d00ca01bf_100x100.png?v=1637219945"
+                  alt="Urlis"
+                />
+                <p>URILS</p>
+              </div>
+
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/god-idols_6e6a2725-2367-425c-8040-e576a592b9e5_100x100.png?v=1637219998"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/god-idols_6e6a2725-2367-425c-8040-e576a592b9e5_100x100.png?v=1637219998"
+                  alt="God Idols"
+                />
+                <p>GOD IDOLS</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/DSC_6026_1_62b8ef22-39be-4ce2-b14b-ec4e3939fc8a_100x100.jpg?v=1643796829"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/DSC_6026_1_62b8ef22-39be-4ce2-b14b-ec4e3939fc8a_100x100.jpg?v=1643796829"
+                  alt="Aura Cleansing"
+                />
+                <p>LAMPS & LANTERS</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-between">
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/pooja-room-decor_d7ea5b43-d435-4e01-9e06-10f1964f78a7_100x100.png?v=1637220188"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/pooja-room-decor_d7ea5b43-d435-4e01-9e06-10f1964f78a7_100x100.png?v=1637220188"
+                  alt="Pooja Decor"
+                />
+                <p>POOJA DECOR</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/Sale_100x100.png?v=1637837732"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/Sale_100x100.png?v=1637837732"
+                  alt="Sale"
+                />
+                <p>SALE</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/god-idols_6e6a2725-2367-425c-8040-e576a592b9e5_100x100.png?v=1637219998"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/god-idols_6e6a2725-2367-425c-8040-e576a592b9e5_100x100.png?v=1637219998"
+                  alt="God Idols"
+                />
+                <p>GOD IDOLS</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/home-decor_fe85768e-1c58-46ab-986b-87eba7b8bdbb_100x100.png?v=1637219857"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/home-decor_fe85768e-1c58-46ab-986b-87eba7b8bdbb_100x100.png?v=1637219857"
+                  alt="Home Decor"
+                />
+                <p>HOME DECOR</p>
+              </div>
+              <div>
+                <img
+                  class="max_img_opt lazyloaded"
+                  src="//cdn.shopify.com/s/files/1/2090/3151/files/urlis_695e992d-0182-4b65-98d6-c83d00ca01bf_100x100.png?v=1637219945"
+                  data-src="//cdn.shopify.com/s/files/1/2090/3151/files/urlis_695e992d-0182-4b65-98d6-c83d00ca01bf_100x100.png?v=1637219945"
+                  alt="Urlis"
+                />
+                <p>URILS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function closeSidebar() {
+        let x = document.getElementById("side-menu-wrapper-id");
+        x.classList.remove("show");
+        console.log(x);
+      }
+
+      function showSidebar() {
+        let x = document.getElementById("side-menu-wrapper-id");
+        x.classList.add("show");
+        console.log(x);
+      }
+    </script>
+  </body>
+</html>
